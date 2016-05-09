@@ -6,7 +6,7 @@
     oc expose dc rstudio --port=8787
     oc expose svc rstudio
     ```
-1.  使用web浏览器登陆rstudio route地址执行如下代码
+1.  使用web浏览器登陆rstudio route地址执行如下代码.默认用户名和密码均为rstudio
 
     ```  
     #登录datahub
