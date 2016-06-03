@@ -92,10 +92,10 @@
 
     #通过DATAFoundry backingservice获取共享数据
     env <- system2("env",stdout = T)
-    BSI_MYMONGODB_USERNAME <-strsplit( env[grep("^BSI_MYMONGODB_USERNAME",env)],"=")[[1]][2]
-    BSI_MYMONGODB_PASSWORD <-strsplit( env[grep("^BSI_MYMONGODB_PASSWORD",env)],"=")[[1]][2]
-    BSI_MYMONGODB_HOST     <-strsplit( env[grep("^BSI_MYMONGODB_HOST",env)],"=")[[1]][2]
-    BSI_MYMONGODB_PORT     <-strsplit( env[grep("^BSI_MYMONGODB_PORT",env)],"=")[[1]][2]
+    BSI_MYMONGODB_USERNAME <-strsplit( env[grep("^BSI_MONGODB_MYMONGODB_USERNAME",env)],"=")[[1]][2]
+    BSI_MYMONGODB_PASSWORD <-strsplit( env[grep("^BSI_MONGODB_MYMONGODB_PASSWORD",env)],"=")[[1]][2]
+    BSI_MYMONGODB_HOST     <-strsplit( env[grep("^BSI_MONGODB_MYMONGODB_HOST",env)],"=")[[1]][2]
+    BSI_MYMONGODB_PORT     <-strsplit( env[grep("^BSI_MONGODB_MYMONGODB_PORT",env)],"=")[[1]][2]
 
     #获取共享数据
     shared_data_uri <- paste0("mongodb://",BSI_MYMONGODB_USERNAME,
